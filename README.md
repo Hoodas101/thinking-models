@@ -6,7 +6,7 @@
 
 ![License](https://img.shields.io/badge/license-MIT-green) ![Models](https://img.shields.io/badge/思维模型-66个-blue) ![Biases](https://img.shields.io/badge/认知偏误-39个-orange) ![Platform](https://img.shields.io/badge/平台-Claude%20Code%20%7C%20Cursor%20%7C%20Codex%20%7C%20Cline-purple)
 
-**版本**：v1.0.1 | **更新**：2026-09-08 | **许可证**：MIT
+**版本**：v1.0.3 | **更新**：2026-09-09 | **许可证**：MIT
 
 ## 这是什么
 
@@ -127,7 +127,7 @@ cp ~/.cc-switch/skills/thinking-models/AGENTS.md /path/to/your/project/AGENTS.md
 
 ```
 thinking-models/
-├── SKILL.md            ← 入口（~800 token），处理大多数场景
+├── SKILL.md            ← 入口（约 3K token），处理大多数场景
 ├── FULL-MODELS.md      ← 扩展：#11-66共56个模型，5大领域
 ├── BIAS-CORRECTION.md  ← 扩展：39个偏误精简卡（完整版在 bias-correction skill）
 ├── REFERENCE.md        ← 参考：决策树/防滥用/使用指南/场景入口

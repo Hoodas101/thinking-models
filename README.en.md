@@ -6,7 +6,7 @@
 
 ![License](https://img.shields.io/badge/license-MIT-green) ![Models](https://img.shields.io/badge/models-66-blue) ![Biases](https://img.shields.io/badge/biases-39-orange) ![Platform](https://img.shields.io/badge/platform-Claude%20Code%20%7C%20Cursor%20%7C%20Codex%20%7C%20Cline-purple)
 
-**Version**: v1.0.1 | **Updated**: 2026-09-08 | **License**: MIT
+**Version**: v1.0.3 | **Updated**: 2026-09-09 | **License**: MIT
 
 ## What is this
 
@@ -127,7 +127,7 @@ cp ~/.cc-switch/skills/thinking-models/AGENTS.md /path/to/your/project/AGENTS.md
 
 ```
 thinking-models/
-├── SKILL.md            ← Entry file (~800 tokens), handles most scenarios
+├── SKILL.md            ← Entry file (~3K tokens), handles most scenarios
 ├── FULL-MODELS.md      ← Extension: models #11-66, 5 domains
 ├── BIAS-CORRECTION.md  ← Extension: 39 bias quick-reference cards (full version in bias-correction skill)
 ├── REFERENCE.md        ← Reference: decision trees / anti-abuse / usage guide / scenario entries

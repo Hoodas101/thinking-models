@@ -40,7 +40,7 @@ Question → Assess depth
 | Two offers/jobs | Decision Matrix | Reversibility |
 | Start career/change | Antifragile | Sweet Spot |
 | Price/salary negotiation | Game Theory + Anchoring | Comparative Advantage |
-| Self-doubt | Impostor + Circle of Competence | Growth Mindset |
+| Self-doubt | BC#19 Impostor + Circle of Competence (#61) | Growth Mindset |
 | Resource allocation | Pareto | Marginal Thinking |
 | Risk assessment | Premortem | Inversion |
 | Competition strategy | Moat | Game Theory |
