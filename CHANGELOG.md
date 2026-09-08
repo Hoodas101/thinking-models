@@ -2,6 +2,15 @@
 
 ## [1.0.1] - 2026-09-08
 
+### 新增
+- 双语 README：`README.md`（中文，默认）+ `README.en.md`（English），语言切换链接互通
+- README 新增 badges、姊妹 skill 对照表（含单装降级说明）、工作原理图、使用技巧表
+
+### 修复
+- 移除 install.sh / README / .cursorrules 中 7 处 `YOUR_USERNAME` 占位符
+- REFERENCE.md 决策日志路径通用化（移除本机私有路径）
+- AGENTS.md 中英混杂（"information增量"→"information gain"）
+
 ### 修复
 - BIAS-CORRECTION.md 精简卡与 `bias-correction` skill 去重：编号对齐（#35/#36 区间修正）、注明完整版所在、深挖时优先调用 bias-correction
 - REFERENCE.md 错误引用 #61 为 MVP（#61 实为能力圈）→ 改标"产品创新域"
