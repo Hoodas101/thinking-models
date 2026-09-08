@@ -1,6 +1,6 @@
 ---
 name: thinking-models
-version: 1.0.3
+version: 1.1.0
 description: 让AI不再只给答案——帮你避开思维陷阱、看穿假设、做出更清醒的决定。自动识别问题深度，简单问题一句话点缀，深度问题用苏格拉底式提问引导你思考。支持Claude Code/Cursor/Codex/Cline。
 ---
 
