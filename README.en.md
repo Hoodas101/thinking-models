@@ -376,14 +376,7 @@ See [CHANGELOG.md](CHANGELOG.md)
 
 ## Support this project
 
-This skill is free and open source (MIT). If it helped you avoid a bad decision or finally think through something you'd been wrestling with, consider buying the author a coffee:
-
-- **GitHub Sponsors**: [github.com/sponsors/Mihooni](https://github.com/sponsors/Mihooni)
-- Or drop a ⭐ Star — it helps others find this, which matters just as much for an open-source project
-
-## Support this project
-
-If this project saves you time, buying me a coffee keeps it going ☕
+This skill is free and open source (MIT). If it helped you avoid a bad decision or finally think through something you'd been wrestling with, consider buying the author a coffee ☕
 
 <p align="center">
   <img src="docs/donate-wechat.png" alt="WeChat Pay" width="220">&nbsp;&nbsp;
