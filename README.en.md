@@ -1,6 +1,6 @@
 # Thinking Models
 
-> AI that doesn't just give answers — it helps you avoid thinking traps, surface hidden assumptions, and make clearer decisions.
+> AI that doesn't stop at giving answers. It helps you avoid thinking traps, surface hidden assumptions, and make clearer decisions.
 
 [简体中文](README.md) | **English**
 
@@ -13,23 +13,23 @@
 A skill that makes AI automatically apply mental models and cognitive bias checks to every question it answers.
 
 **It is NOT**: a tool that only triggers when you say "analyze".
-**It IS**: every question passes through a thinking framework first, which then decides the response depth — a one-line nudge for simple questions, full analysis for deep ones.
+**It IS**: every question passes through a thinking framework first, which then decides the response depth. A one-line nudge for simple questions, full analysis for deep ones.
 
 ## Who needs this
 
 | You are | What you face | What this skill does for you |
 |---|---|---|
-| **Everyday user** | Job changes, buying a home, kids' education, family conversations — life's high-stakes decisions with no one to consult | Breaks dilemmas into "essence → analysis → actions → risk"; no more wishy-washy AI answers. Socratic questioning helps YOU think it through, instead of deciding for you |
-| **Tech / business professional** | Business judgment, competitive strategy, negotiation pricing, resource allocation — costly when wrong | 66 models matched precisely to scenarios (game theory / moats / antifragility / expected value...), multi-model cross-validation on deep questions, adversarial review on every conclusion |
-| **AI creator / developer** | You want your agent to have a "deep-thinking layer" instead of parroting search results | Out-of-the-box graded intervention protocol + tri-mode output + cross-platform formats (SKILL.md / AGENTS.md / .cursorrules); also a reference architecture for building your own reasoning skills |
+| **Everyday user** | Job changes, buying a home, kids' education, family conversations: life's high-stakes decisions with no one to consult | Breaks dilemmas into "essence → analysis → actions → risk"; no more wishy-washy AI answers. Socratic questioning helps YOU think it through, and it won't decide for you |
+| **Tech / business professional** | Business judgment, competitive strategy, negotiation pricing, resource allocation: costly when wrong | 66 models matched precisely to scenarios (game theory / moats / antifragility / expected value...), multi-model cross-validation on deep questions, adversarial review on every conclusion |
+| **AI creator / developer** | You want your agent to have a "deep-thinking layer" that goes beyond parroting search results | Out-of-the-box graded intervention protocol + tri-mode output + cross-platform formats (SKILL.md / AGENTS.md / .cursorrules); also a reference architecture for building your own reasoning skills |
 
 ## Before vs. after
 
 | Dimension | Ordinary AI chat | With thinking-models |
 |---|---|---|
-| "Should I switch careers?" | "Consider the pros and cons" — correct nonsense | Names the real question + a counter-intuitive insight + an action list with verification steps and timelines |
+| "Should I switch careers?" | "Consider the pros and cons": correct nonsense | Names the real question + a counter-intuitive insight + an action list with verification steps and timelines |
 | Depth calibration | Rambling or too brief, regardless of stakes | L0-L3 graded intervention: no overkill on small things, no laziness on big ones |
-| Blind spots | Follows your premises — you say it, it agrees | Adversarial review: red-teams its own conclusion before answering |
+| Blind spots | Follows your premises. You say it, it agrees | Adversarial review: red-teams its own conclusion before answering |
 | Biases | Can't see you're sunk in "sunk cost" or "survivorship bias" | 39 biases automatically checked against your reasoning chain |
 | Long term | Ask, forget, never improve | Deep decisions logged automatically, 30-day review reminder |
 
@@ -39,7 +39,7 @@ This skill pairs with [bias-correction](https://github.com/Hoodas101/bias-correc
 
 | | thinking-models (this skill) | bias-correction |
 |---|---|---|
-| Positioning | **How to decide better** — analysis toolbox | **Where reasoning goes wrong** — error guardrail |
+| Positioning | **How to decide better**: analysis toolbox | **Where reasoning goes wrong**: error guardrail |
 | Content | 66 mental models + scenario matching table | 39 biases + dual-channel trigger detection |
 | Trigger | Automatically grades every question | Bias-signal driven, not active by default |
 
@@ -47,17 +47,17 @@ The two share interoperable numbering (e.g., Sunk Cost = TM#1 = BC#29) and compa
 
 ## Core capabilities
 
-- **66 mental models**: from Sunk Cost to Antifragility, across 5 domains — strategy / decision-making / systems / interpersonal / growth
+- **66 mental models**: from Sunk Cost to Antifragility, across 5 domains: strategy / decision-making / systems / interpersonal / growth
 - **39 cognitive biases**: from Confirmation Bias to Overfitting, automatically checking reasoning chains (full bias correction in the sister skill [bias-correction](https://github.com/Hoodas101/bias-correction))
-- **Graded intervention**: three levels (L0/L1/L2-L3) auto-adjusted — no overkill on simple questions, full six-step protocol on deep ones
+- **Graded intervention**: three levels (L0/L1/L2-L3) auto-adjusted. No overkill on simple questions, full six-step protocol on deep ones
 - **Tri-mode output**: concise / guiding (Socratic questioning) / deep analysis, adapting to question complexity and user preference
 - **First principles**: applied to every question, broken down to indivisible facts
-- **Tacit knowledge**: activates experience-based intuition, not just logical deduction
-- **Adversarial review**: red-teams its own conclusions before output — strongest opponent / stress test / cost asymmetry
-- **Dynamic model count**: 1-7 models based on complexity — quality over quantity; every model must add unique information gain
+- **Tacit knowledge**: activates experience-based intuition as well as logical deduction
+- **Adversarial review**: red-teams its own conclusions before output, strongest opponent / stress test / cost asymmetry
+- **Dynamic model count**: 1-7 models based on complexity. Quality over quantity; every model must add unique information gain
 - **Decision tracking**: generates a decision log after deep analysis, with a 30-day review reminder
 - **Safety guardrails**: recommends professional help for high-stakes scenarios (mental health / legal / medical / major financial); Eastern cultural contexts are not misdiagnosed as biases
-- **Exit mechanism**: say "just answer" and it obeys — no forced intervention
+- **Exit mechanism**: say "just answer" and it obeys. No forced intervention
 
 ## How it compares
 
@@ -70,11 +70,11 @@ The two share interoperable numbering (e.g., Sunk Cost = TM#1 = BC#29) and compa
 
 ## What actually changes
 
-No invented metrics — just mechanisms, each verifiable in a single conversation:
+No invented metrics, just mechanisms, each verifiable in a single conversation:
 
-- **Decision quality**: every deep analysis passes three gates — first-principles decomposition → model matching → adversarial review — and surfaces at least one counter-intuitive insight
+- **Decision quality**: every deep analysis passes three gates (first-principles decomposition → model matching → adversarial review) and surfaces at least one counter-intuitive insight
 - **Blind spots exposed**: 39 biases checked automatically; catches traps like "sunk cost" and "survivorship bias" that are nearly impossible to see on your own
-- **A feedback loop**: decision log + 30-day review reminder calibrates your judgment against real outcomes — something books and articles can't give you
+- **A feedback loop**: decision log + 30-day review reminder calibrates your judgment against real outcomes, something books and articles can't give you
 - **Time saved**: graded intervention keeps simple questions undisturbed; deep thinking is spent only where it's worth it
 
 ## Installation
@@ -262,16 +262,16 @@ The biggest disease of "mental model" content is selling Munger anecdotes and Ka
 | 📊 Academic consensus | 25 | Textbook-level findings in cognitive science / behavioral economics | Safe as grounds for a correction |
 | 📊 Empirically supported | 9 | Backed by specific studies (e.g. Flywheel traces to Collins' comparative research) | Primary reference; check that the study's context matches yours |
 | 💡 Practitioner heuristic | 14 | From Munger / Taleb-style experience, no systematic experiments | Use as a mirror for questions, not an authority for answers |
-| 🔄 Borrowed metaphor | 6 | Concepts imported from physics/chemistry/biology (Black Swan, dissipative structures, Le Chatelier) | **Caution**: a metaphor is an analogy, not a proof — cross-domain transfer is where errors concentrate |
+| 🔄 Borrowed metaphor | 6 | Concepts imported from physics/chemistry/biology (Black Swan, dissipative structures, Le Chatelier) | **Caution**: a metaphor is an analogy, not a proof; cross-domain transfer is where errors concentrate |
 | ⚠️ Controversial | 2 | Real academic disagreement (Peter Principle, Broken Windows) | Entry point for thinking only, never the basis of a decision |
 
-Three corollaries — and the reason we publish this table:
+Three corollaries, and the reason we publish this table:
 
-1. **The more "profound" a model sounds, the thinner its evidence.** Black Swan, dissipative structures, emergence — the most pleasurable to read are exactly the ones that collapse under "does this analogy hold in your case?"
-2. **Controversial models stay, but get flagged.** The Peter Principle and Broken Windows have genuine insight and genuine empirical pushback — labeling beats hiding.
-3. **The skill's own protocol obeys this standard.** The six-step protocol's adversarial review requires every conclusion to carry a confidence label (high/med/low) — a tool against fake certainty can't fake its own.
+1. **The more "profound" a model sounds, the thinner its evidence.** Black Swan, dissipative structures, emergence: the most pleasurable to read are exactly the ones that collapse under "does this analogy hold in your case?"
+2. **Controversial models stay, but get flagged.** The Peter Principle and Broken Windows have genuine insight and genuine empirical pushback; labeling beats hiding.
+3. **The skill's own protocol obeys this standard.** The six-step protocol's adversarial review requires every conclusion to carry a confidence label (high/med/low). A tool against fake certainty can't fake its own.
 
-> Per-model labels live in `FULL-MODELS.md`. The sister skill bias-correction has a stronger base: 37 academic consensus + 2 experience-based out of 39 biases — bias research is an experiment-dense field.
+> Per-model labels live in `FULL-MODELS.md`. The sister skill bias-correction has a stronger base: 37 academic consensus + 2 experience-based out of 39 biases; bias research is an experiment-dense field.
 
 ## Design decisions: answers to "why isn't it more elaborate?"
 
@@ -279,18 +279,18 @@ Three corollaries — and the reason we publish this table:
 |---|---|
 | Simple questions get one sentence, no full analysis | Graded intervention is the core design. Running the six-step protocol on an L0 fact question is hammer-nail thinking. A tool's first virtue is knowing when **not** to fire |
 | Model selection is hidden from the output (conclusions only) | Printing "I applied #4 Antifragile + #23 Second-order thinking" performs analysis at you instead of doing it for you. Reasoning internalized, conclusions external |
-| Guiding mode (B) asks questions instead of concluding | Core finding of decision science: people don't execute decisions they were talked into — they execute decisions they talked themselves into. A recommendation you didn't reason through has low follow-through no matter how good |
-| No visual cards, no "fit score /10" | Such decoration swaps "looks professional" for "is useful", and invites you to audit formatting instead of conclusions |
+| Guiding mode (B) asks questions instead of concluding | Core finding of decision science: people don't execute decisions they were talked into; they execute decisions they talked themselves into. A recommendation you didn't reason through has low follow-through no matter how good |
+| No visual cards, no "fit score /10" | Such decoration swaps "looks professional" for "is useful", and invites you to audit the formatting, not the conclusions |
 | High-stakes scenarios get "see a professional first" | Depression, litigation, medication are not "cognitive bias" problems. A thinking tool that absorbs professional territory is overstepping |
-| Eastern contexts (deferring to parents, saving face) are not force-corrected | Diagnosing them as bandwagon/halo bias silently assumes an individualist reference frame. The cultural-adaptation layer isn't political correctness — it prevents systematic misdiagnosis |
+| Eastern contexts (deferring to parents, saving face) are not force-corrected | Diagnosing them as bandwagon/halo bias silently assumes an individualist reference frame. The cultural-adaptation layer isn't political correctness; it prevents systematic misdiagnosis |
 
 ## Limitations: what this skill does NOT do
 
-- **It can't fetch facts for you.** No matter how well models match, garbage premises produce garbage conclusions — the first-principles step can only decompose down to the facts you provide.
+- **It can't fetch facts for you.** No matter how well models match, garbage premises produce garbage conclusions; the first-principles step can only decompose down to the facts you provide.
 - **Its self-review has no external verifier.** The six-step protocol forces red-teaming, but "AI grading itself" is inherently limited. That's why the decision log exists: the final judge is your real outcome 30 days later, not the analysis.
 - **Depth grading can misfire.** Small-looking questions (where to eat) and big-looking ones (should I do a master's) can both be classified wrong. Say "keep it short" or "analyze in depth" to override at any time.
-- **It is not emotional support.** When anxiety/depression signals are detected it refers out to professionals — that's not a liability clause; it genuinely shouldn't improvise in that territory.
-- **Execution quality depends on the host model.** Weak models complete the protocol less faithfully — though the honest-declaration step still applies (it won't fake completion).
+- **It is not emotional support.** When anxiety/depression signals are detected it refers out to professionals. It genuinely shouldn't improvise in that territory, and that has nothing to do with liability.
+- **Execution quality depends on the host model.** Weak models complete the protocol less faithfully, though the honest-declaration step still applies (it won't fake completion).
 
 ## 5-minute self-test: don't trust the pitch, run these three
 
@@ -299,18 +299,18 @@ Install it, then enter each line. Each maps to one core promise:
 | You enter | What it tests | Pass criterion |
 |---|---|---|
 | "What's the difference between Python 3.12 and 3.11" | Graded intervention (no overkill on L0) | Normal answer, **no** "essence → analysis → actions" framework, at most 1 bonus line |
-| "I've spent two years on this project with no traction, but one more half-year should work, right?" | Bias detection + adversarial review | Names sunk cost, poses the "would you choose it today for the first time" test — instead of encouraging persistence |
+| "I've spent two years on this project with no traction, but one more half-year should work, right?" | Bias detection + adversarial review | Names sunk cost, poses the "would you choose it today for the first time" test instead of encouraging persistence |
 | "Help me think through moving to management" (phrased as "help me think it through") | Guiding mode | You receive questions (motivation / constraints / trial), not a decision made for you |
 
-If all three pass, it deserves this page. If not — open an issue. That matters more than anything written here.
+If all three pass, it deserves this page. If not, open an issue. That matters more than anything written here.
 
 ## FAQ
 
-**Q: Running every question through models — isn't that noisy?**
+**Q: Running every question through models, isn't that noisy?**
 No. L0/L1 don't start the protocol or show the framework; only L2-L3 (stakes / dilemma / systemic) expand. That's exactly what graded intervention is for.
 
 **Q: How is this different from just telling the AI "analyze this with mental models"?**
-Three things: ① the check also fires when you don't think to ask (dual-channel detection via trigger words + reasoning structures); ② the six-step protocol is enforced — freely-prompted AI tends to perform analysis rather than red-team it; ③ the decision log accumulates — one-off chats become long-term calibration data.
+Three things: ① the check also fires when you don't think to ask (dual-channel detection via trigger words + reasoning structures); ② the six-step protocol is enforced; freely-prompted AI tends to perform analysis rather than red-team it; ③ the decision log accumulates, and one-off chats become long-term calibration data.
 
 **Q: Isn't 66 models bloat that degenerates into cargo-culting?**
 The protocol is strict "quality over quantity": L2 uses 1-3 models, every model must add unique information gain, and repeating a perspective counts as a violation. The library is an armory, not a salvo you fire every time.
@@ -319,7 +319,7 @@ The protocol is strict "quality over quantity": L2 uses 1-3 models, every model 
 Recommended pair, no conflict. TM owns "how to decide better" (active grading), BC owns "where reasoning goes wrong" (signal-driven). Interoperable numbering (Sunk Cost = TM#1 = BC#29), and the integration protocol is written into both sides. Each also stands alone (TM ships 39-bias quick-reference cards as fallback).
 
 **Q: Beyond Claude Code?**
-Copy `.cursorrules` for Cursor, `AGENTS.md` for Codex/Cline/Continue — same protocol, adapted format.
+Copy `.cursorrules` for Cursor, `AGENTS.md` for Codex/Cline/Continue, same protocol, adapted format.
 
 **Q: Paid? Will the library grow?**
 MIT, free. Growth goes through the CHANGELOG, and the evidence-labeling rule won't change: a new model gets labeled or doesn't get in.
@@ -365,9 +365,9 @@ The mental models and cognitive biases in this skill are curated from:
 
 ## A note for users
 
-This skill doesn't think for you — it helps you **discover what you already know but haven't noticed**.
+This skill doesn't think for you, it helps you **discover what you already know but haven't noticed**.
 
-Most of the time, the answer is already in your head — I just help you dig it out.
+Most of the time, the answer is already in your head; I just help you dig it out.
 
 ## Share
 
@@ -381,7 +381,7 @@ See [CHANGELOG.md](CHANGELOG.md)
 
 ## Support this project
 
-This skill is free and open source (MIT). If it helped you avoid a bad decision or finally think through something you'd been wrestling with, consider buying the author a coffee ☕
+This skill is free and open source (MIT). If it helped you avoid a bad decision or finally think through something you'd been wrestling with, consider buying the author a coffee.
 
 <p align="center">
   <img src="docs/donate-wechat.png" alt="WeChat Pay" width="220">&nbsp;&nbsp;
@@ -389,11 +389,11 @@ This skill is free and open source (MIT). If it helped you avoid a bad decision 
 </p>
 
 - **Overseas / GitHub Sponsors**: [github.com/sponsors/Hoodas101](https://github.com/sponsors/Hoodas101) (credit cards supported)
-- Or drop a ⭐ Star — it helps others find this, which matters just as much for an open-source project
+- Or drop a Star, which helps others find this and matters just as much for an open-source project
 
 **Elsewhere in the world?** These QR codes need a WeChat or Alipay account with a mainland
 bank card, so they won't work for everyone. Overseas readers can use the **GitHub Sponsors**
-link above; beyond that, a ⭐ star or a bug report helps this project more than you might think.
+link above. A star or a bug report helps just as much.
 ## License
 
 MIT
