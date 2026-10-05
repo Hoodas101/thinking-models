@@ -35,7 +35,7 @@
 
 ## 姊妹 Skill：bias-correction
 
-本 skill 与 [bias-correction](https://github.com/Mihooni/bias-correction)（认知偏误纠正系统）是一对互补组合：
+本 skill 与 [bias-correction](https://github.com/Hoodas101/bias-correction)（认知偏误纠正系统）是一对互补组合：
 
 | | thinking-models（本 skill） | bias-correction |
 |---|---|---|
@@ -48,7 +48,7 @@
 ## 核心能力
 
 - **66 个思维模型**：从沉没成本到反脆弱，覆盖战略/决策/系统/人际/成长 5 大领域
-- **39 个认知偏误**：从确认偏误到过度拟合，自动检查推理链（完整纠偏见姊妹 skill [bias-correction](https://github.com/Mihooni/bias-correction)）
+- **39 个认知偏误**：从确认偏误到过度拟合，自动检查推理链（完整纠偏见姊妹 skill [bias-correction](https://github.com/Hoodas101/bias-correction)）
 - **分级介入**：L0/L1/L2-L3 三级自动调节，简单问题不画蛇添足，深度问题全六步协议
 - **三模式输出**：简洁 / 引导（苏格拉底式提问）/ 深度，按问题复杂度与用户偏好自适应
 - **第一性原理**：每题必做，拆到不可再拆的事实
@@ -79,11 +79,22 @@
 
 ## 安装
 
-### Claude Code（macOS/Linux）
+**一条命令（macOS / Linux，推荐）**
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/Hoodas101/thinking-models/main/install.sh | bash
+```
+
+装完重启 Claude Code，试试问："帮我分析一下该不该换工作"。
+
+<details>
+<summary>不用 curl？Windows / Cursor / Codex / 手工安装 → 点开</summary>
+
+### Claude Code（macOS / Linux，手工）
 
 ```bash
 # 1. 克隆仓库
-git clone https://github.com/Mihooni/thinking-models.git ~/.cc-switch/skills/thinking-models
+git clone https://github.com/Hoodas101/thinking-models.git ~/.cc-switch/skills/thinking-models
 
 # 2. 创建 symlink 挂载
 ln -s ~/.cc-switch/skills/thinking-models ~/.claude/skills/thinking-models
@@ -95,7 +106,7 @@ ln -s ~/.cc-switch/skills/thinking-models ~/.claude/skills/thinking-models
 
 ```powershell
 # 1. 克隆仓库
-git clone https://github.com/Mihooni/thinking-models.git %USERPROFILE%\.cc-switch\skills\thinking-models
+git clone https://github.com/Hoodas101/thinking-models.git %USERPROFILE%\.cc-switch\skills\thinking-models
 
 # 2. 创建 symlink 挂载（需要管理员权限的 PowerShell）
 cmd /c mklink /D %USERPROFILE%\.claude\skills\thinking-models %USERPROFILE%\.cc-switch\skills\thinking-models
@@ -116,6 +127,8 @@ cp ~/.cc-switch/skills/thinking-models/.cursorrules /path/to/your/project/.curso
 # 将 AGENTS.md 复制到你的项目根目录
 cp ~/.cc-switch/skills/thinking-models/AGENTS.md /path/to/your/project/AGENTS.md
 ```
+
+</details>
 
 ### 手动安装（不使用 git）
 
@@ -349,14 +362,6 @@ MIT 开源免费。扩充会走 CHANGELOG，证据标注原则不变——新模
 - Richard Thaler《助推》
 - 以及行为经济学、认知心理学的学术共识
 
-## 一键安装
-
-```bash
-curl -fsSL https://raw.githubusercontent.com/Mihooni/thinking-models/main/install.sh | bash
-```
-
-安装后重启 Claude Code，试试问："帮我分析一下该不该换工作"
-
 ## 给用户的话
 
 这个 skill 不是要替你思考，而是帮你**发现自己已经知道但没意识到的事**。
@@ -367,7 +372,7 @@ curl -fsSL https://raw.githubusercontent.com/Mihooni/thinking-models/main/instal
 
 如果你觉得这个 skill 有用，可以这样推荐给朋友：
 
-> 给 Claude 装了个"思维教练"skill，不再是冷冰冰给答案，而是会追问你、帮你发现自己的盲点。推荐试试：github.com/Mihooni/thinking-models
+> 给 Claude 装了个"思维教练"skill，不再是冷冰冰给答案，而是会追问你、帮你发现自己的盲点。推荐试试：github.com/Hoodas101/thinking-models
 
 ## 更新日志
 
@@ -382,9 +387,11 @@ curl -fsSL https://raw.githubusercontent.com/Mihooni/thinking-models/main/instal
   <img src="docs/donate-alipay.jpg" alt="支付宝打赏" width="220">
 </p>
 
+- **海外 / GitHub Sponsors**：[github.com/sponsors/Hoodas101](https://github.com/sponsors/Hoodas101)（支持信用卡）
+- 也可以点一个 ⭐ Star，让更多需要它的人看到——这对开源项目同样重要
+
 **中国大陆以外？** 这两个码需要绑定大陆银行卡的微信 / 支付宝，海外朋友多半扫不了。
-国际支付通道（信用卡 / PayPal）正在接入；在那之前，点个 ⭐ Star 或提个 Issue，
-对项目的帮助比想象中大。
+海外读者可用上方 **GitHub Sponsors**；此外点个 ⭐ Star 或提个 Issue，对项目的帮助比想象中大。
 ## License
 
 MIT

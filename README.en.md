@@ -35,7 +35,7 @@ A skill that makes AI automatically apply mental models and cognitive bias check
 
 ## Sister skill: bias-correction
 
-This skill pairs with [bias-correction](https://github.com/Mihooni/bias-correction) (cognitive bias correction system) as a complementary set:
+This skill pairs with [bias-correction](https://github.com/Hoodas101/bias-correction) (cognitive bias correction system) as a complementary set:
 
 | | thinking-models (this skill) | bias-correction |
 |---|---|---|
@@ -48,7 +48,7 @@ The two share interoperable numbering (e.g., Sunk Cost = TM#1 = BC#29) and compa
 ## Core capabilities
 
 - **66 mental models**: from Sunk Cost to Antifragility, across 5 domains — strategy / decision-making / systems / interpersonal / growth
-- **39 cognitive biases**: from Confirmation Bias to Overfitting, automatically checking reasoning chains (full bias correction in the sister skill [bias-correction](https://github.com/Mihooni/bias-correction))
+- **39 cognitive biases**: from Confirmation Bias to Overfitting, automatically checking reasoning chains (full bias correction in the sister skill [bias-correction](https://github.com/Hoodas101/bias-correction))
 - **Graded intervention**: three levels (L0/L1/L2-L3) auto-adjusted — no overkill on simple questions, full six-step protocol on deep ones
 - **Tri-mode output**: concise / guiding (Socratic questioning) / deep analysis, adapting to question complexity and user preference
 - **First principles**: applied to every question, broken down to indivisible facts
@@ -79,11 +79,22 @@ No invented metrics — just mechanisms, each verifiable in a single conversatio
 
 ## Installation
 
-### Claude Code (macOS/Linux)
+**One command (macOS / Linux, recommended)**
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/Hoodas101/thinking-models/main/install.sh | bash
+```
+
+Restart Claude Code, then try: "Help me think through whether I should change jobs".
+
+<details>
+<summary>No curl? Windows / Cursor / Codex / manual install → expand</summary>
+
+### Claude Code (macOS / Linux, manual)
 
 ```bash
 # 1. Clone the repo
-git clone https://github.com/Mihooni/thinking-models.git ~/.cc-switch/skills/thinking-models
+git clone https://github.com/Hoodas101/thinking-models.git ~/.cc-switch/skills/thinking-models
 
 # 2. Create a symlink to mount
 ln -s ~/.cc-switch/skills/thinking-models ~/.claude/skills/thinking-models
@@ -95,7 +106,7 @@ ln -s ~/.cc-switch/skills/thinking-models ~/.claude/skills/thinking-models
 
 ```powershell
 # 1. Clone the repo
-git clone https://github.com/Mihooni/thinking-models.git %USERPROFILE%\.cc-switch\skills\thinking-models
+git clone https://github.com/Hoodas101/thinking-models.git %USERPROFILE%\.cc-switch\skills\thinking-models
 
 # 2. Create a symlink (PowerShell as Administrator)
 cmd /c mklink /D %USERPROFILE%\.claude\skills\thinking-models %USERPROFILE%\.cc-switch\skills\thinking-models
@@ -122,6 +133,8 @@ cp ~/.cc-switch/skills/thinking-models/AGENTS.md /path/to/your/project/AGENTS.md
 1. Download and unzip this repo
 2. Put the unzipped `thinking-models` folder anywhere (e.g. `~/.cc-switch/skills/`)
 3. Create a symlink pointing to it (see the commands above)
+
+</details>
 
 ## File structure
 
@@ -350,14 +363,6 @@ The mental models and cognitive biases in this skill are curated from:
 - Richard Thaler, *Nudge*
 - Plus the academic consensus of behavioral economics and cognitive psychology
 
-## One-line install
-
-```bash
-curl -fsSL https://raw.githubusercontent.com/Mihooni/thinking-models/main/install.sh | bash
-```
-
-After installing, restart Claude Code and try: "Help me decide whether to change jobs"
-
 ## A note for users
 
 This skill doesn't think for you — it helps you **discover what you already know but haven't noticed**.
@@ -368,7 +373,7 @@ Most of the time, the answer is already in your head — I just help you dig it 
 
 If you find this skill useful, here's how you might recommend it to a friend:
 
-> I installed a "thinking coach" skill for Claude. Instead of cold answers, it asks probing questions and surfaces my blind spots. Check it out: github.com/Mihooni/thinking-models
+> I installed a "thinking coach" skill for Claude. Instead of cold answers, it asks probing questions and surfaces my blind spots. Check it out: github.com/Hoodas101/thinking-models
 
 ## Changelog
 
@@ -383,9 +388,12 @@ This skill is free and open source (MIT). If it helped you avoid a bad decision 
   <img src="docs/donate-alipay.jpg" alt="Alipay" width="220">
 </p>
 
+- **Overseas / GitHub Sponsors**: [github.com/sponsors/Hoodas101](https://github.com/sponsors/Hoodas101) (credit cards supported)
+- Or drop a ⭐ Star — it helps others find this, which matters just as much for an open-source project
+
 **Elsewhere in the world?** These QR codes need a WeChat or Alipay account with a mainland
-bank card, so they won't work for everyone. An international option (card / PayPal) is on the
-way — until then, a ⭐ star or a bug report helps this project more than you might think.
+bank card, so they won't work for everyone. Overseas readers can use the **GitHub Sponsors**
+link above; beyond that, a ⭐ star or a bug report helps this project more than you might think.
 ## License
 
 MIT

@@ -2,14 +2,14 @@
 # Thinking Models Skill - 一键安装脚本
 # 支持 macOS / Linux
 # 用法:
-#   首次安装（curl 管道）: curl -fsSL https://raw.githubusercontent.com/Mihooni/thinking-models/main/install.sh | bash
+#   首次安装（curl 管道）: curl -fsSL https://raw.githubusercontent.com/Hoodas101/thinking-models/main/install.sh | bash
 #   本地克隆后执行:        bash install.sh
 #   从已有目录复制:        bash install.sh --dir ~/.cc-switch/skills/thinking-models
 #   覆盖已装版本(非交互):  bash install.sh --force
 
 set -e
 
-REPO_URL="https://github.com/Mihooni/thinking-models.git"
+REPO_URL="https://github.com/Hoodas101/thinking-models.git"
 SKILL_NAME="thinking-models"
 
 # 解析可选参数（必须在任何 stdin 检测之前完成）
