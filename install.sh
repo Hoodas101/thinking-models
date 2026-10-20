@@ -6,6 +6,7 @@
 #   本地克隆后执行:        bash install.sh
 #   从已有目录复制:        bash install.sh --dir ~/.cc-switch/skills/thinking-models
 #   覆盖已装版本(非交互):  bash install.sh --force
+#   指定平台:              bash install.sh --qoder | --claude
 
 set -e
 
@@ -15,6 +16,7 @@ SKILL_NAME="thinking-models"
 # 解析可选参数（必须在任何 stdin 检测之前完成）
 SOURCE_DIR="${SOURCE_DIR:-}"
 FORCE=0
+TARGET=""
 while [ $# -gt 0 ]; do
     case "$1" in
         --dir)
@@ -23,6 +25,14 @@ while [ $# -gt 0 ]; do
             ;;
         --force)
             FORCE=1
+            shift
+            ;;
+        --qoder)
+            TARGET="qoder"
+            shift
+            ;;
+        --claude)
+            TARGET="claude"
             shift
             ;;
         *)
@@ -46,10 +56,24 @@ echo "🔍 检测到操作系统: $OS"
 
 # 确定安装目录
 get_install_dir() {
+    if [ "$TARGET" = "qoder" ]; then
+        echo "$HOME/.qoder/skills"
+        return
+    fi
+    if [ "$TARGET" = "claude" ]; then
+        if [ -d "$HOME/.config/claude/skills" ] && [ ! -d "$HOME/.claude/skills" ]; then
+            echo "$HOME/.config/claude/skills"
+        else
+            echo "$HOME/.claude/skills"
+        fi
+        return
+    fi
     if [ -d "$HOME/.claude/skills" ]; then
         echo "$HOME/.claude/skills"
     elif [ -d "$HOME/.config/claude/skills" ]; then
         echo "$HOME/.config/claude/skills"
+    elif [ -d "$HOME/.qoder/skills" ]; then
+        echo "$HOME/.qoder/skills"
     else
         echo "$HOME/.claude/skills"
     fi
@@ -111,9 +135,9 @@ echo ""
 echo "📍 安装位置: $SKILL_DIR"
 echo ""
 echo "🚀 下一步："
-echo "   1. 重启 Claude Code"
+echo "   1. 重启你的 Agent（Claude Code / Qoder 等）"
 echo "   2. 试试问：'帮我分析一下该不该换工作'"
-echo "   3. 或说：'用大白话简单说' 体验简洁模式"
+echo "   3. 或说：'直接答，别分析' 体验退出机制"
 echo ""
 echo "📖 文档: $SKILL_DIR/README.md"
 if [ -d "$SKILL_DIR/.git" ]; then
