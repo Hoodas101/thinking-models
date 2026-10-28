@@ -1,0 +1,1530 @@
+{
+  "version": "1.3.1",
+  "updated": "2026-10-27",
+  "meta": {
+    "models": 77,
+    "top_layer": 10,
+    "biases": 39,
+    "domains": {
+      "第一层": [
+        1,
+        10
+      ],
+      "战略与商业": [
+        11,
+        22,
+        73
+      ],
+      "决策与认知": [
+        23,
+        32,
+        70,
+        72,
+        77
+      ],
+      "系统与组织": [
+        33,
+        46,
+        74,
+        75
+      ],
+      "人际与影响力": [
+        47,
+        58,
+        71,
+        76
+      ],
+      "成长与逆商": [
+        59,
+        66
+      ],
+      "进阶决策程序": [
+        67,
+        69
+      ]
+    }
+  },
+  "models": [
+    {
+      "id": 1,
+      "zh": "沉没成本",
+      "en": "Sunk Cost",
+      "domain": "第一层",
+      "evidence": "学术共识",
+      "top_zh": "**沉没成本**：已投入所以继续 → 今天第一次接触还会选吗？",
+      "top_en": "Sunk Cost | already invested so much | check: choose this today? | past ≠ future"
+    },
+    {
+      "id": 2,
+      "zh": "逆向思维",
+      "en": "Inversion",
+      "domain": "第一层",
+      "evidence": "经验总结",
+      "top_zh": "**逆向思维**：只想怎么成功 → 什么会导致彻底失败？",
+      "top_en": "Inversion | only thinking success | check: what causes total failure?"
+    },
+    {
+      "id": 3,
+      "zh": "二八定律",
+      "en": "Pareto",
+      "domain": "第一层",
+      "evidence": "实证支持",
+      "top_zh": "**二八定律**：什么都想要 → 哪 20% 贡献 80%？",
+      "top_en": "Pareto | wanting everything | check: which 20% gives 80%?"
+    },
+    {
+      "id": 4,
+      "zh": "反脆弱",
+      "en": "Antifragile",
+      "domain": "第一层",
+      "evidence": "隐喻借用",
+      "top_zh": "**反脆弱**：只求稳定 → 意外让系统变强还是变弱？",
+      "top_en": "Antifragile | only seeking stability | check: does surprise strengthen the system?"
+    },
+    {
+      "id": 5,
+      "zh": "锚定",
+      "en": "Anchoring",
+      "domain": "第一层",
+      "evidence": "学术共识",
+      "top_zh": "**锚定**：先入为主 → 被哪个数字绑架了？",
+      "top_en": "Anchoring | first info dominates | check: evaluate from zero?"
+    },
+    {
+      "id": 6,
+      "zh": "确认偏误",
+      "en": "Confirmation Bias",
+      "domain": "第一层",
+      "evidence": "学术共识",
+      "top_zh": "**确认偏误**：只找支持证据 → 主动找过反面证据吗？",
+      "top_en": "Confirmation Bias | only supporting evidence | check: sought disconfirming evidence?"
+    },
+    {
+      "id": 7,
+      "zh": "概率思维",
+      "en": "Probabilistic Thinking",
+      "domain": "第一层",
+      "evidence": "学术共识",
+      "top_zh": "**概率思维**：非黑即白 → 各结果的概率和期望值是多少？",
+      "top_en": "Probabilistic Thinking | black & white | check: probability distribution?"
+    },
+    {
+      "id": 8,
+      "zh": "框架效应",
+      "en": "Framing Effect",
+      "domain": "第一层",
+      "evidence": "学术共识",
+      "top_zh": "**框架效应**：换个说法决策会变吗？",
+      "top_en": "Framing Effect | same fact, different wording → different choice | check: neutral framing?"
+    },
+    {
+      "id": 9,
+      "zh": "决策矩阵",
+      "en": "Decision Matrix",
+      "domain": "第一层",
+      "evidence": "经验总结",
+      "top_zh": "**决策矩阵**：多选项纠结 → 标准 + 权重 + 打分。",
+      "top_en": "Decision Matrix | multiple options | check: criteria + weights + scoring?"
+    },
+    {
+      "id": 10,
+      "zh": "成长型思维",
+      "en": "Growth Mindset",
+      "domain": "第一层",
+      "evidence": "有争议",
+      "top_zh": "**成长型思维**：能力固定还是可成长？",
+      "top_en": "Growth Mindset | \"I can't / I'm not good\" | check: fixed vs growable ability?"
+    },
+    {
+      "id": 11,
+      "zh": "第一性原理",
+      "en": "First Principles",
+      "domain": "战略与商业",
+      "evidence": "经验总结"
+    },
+    {
+      "id": 12,
+      "zh": "复利效应",
+      "en": "Compound Interest",
+      "domain": "战略与商业",
+      "evidence": "实证支持"
+    },
+    {
+      "id": 13,
+      "zh": "护城河",
+      "en": "Moat",
+      "domain": "战略与商业",
+      "evidence": "经验总结"
+    },
+    {
+      "id": 14,
+      "zh": "博弈论",
+      "en": "Game Theory",
+      "domain": "战略与商业",
+      "evidence": "学术共识"
+    },
+    {
+      "id": 15,
+      "zh": "比较优势",
+      "en": "Comparative Advantage",
+      "domain": "战略与商业",
+      "evidence": "学术共识"
+    },
+    {
+      "id": 16,
+      "zh": "边际思维",
+      "en": "Marginal Thinking",
+      "domain": "战略与商业",
+      "evidence": "学术共识"
+    },
+    {
+      "id": 17,
+      "zh": "黑天鹅防御",
+      "en": "Black Swan Defense",
+      "domain": "战略与商业",
+      "evidence": "隐喻借用"
+    },
+    {
+      "id": 18,
+      "zh": "奥卡姆剃刀",
+      "en": "Occam's Razor",
+      "domain": "战略与商业",
+      "evidence": "经验总结"
+    },
+    {
+      "id": 19,
+      "zh": "幂律分布",
+      "en": "Power Law",
+      "domain": "战略与商业",
+      "evidence": "实证支持"
+    },
+    {
+      "id": 20,
+      "zh": "风险共担",
+      "en": "Skin in the Game",
+      "domain": "战略与商业",
+      "evidence": "经验总结"
+    },
+    {
+      "id": 21,
+      "zh": "汉隆剃刀",
+      "en": "Hanlon's Razor",
+      "domain": "战略与商业",
+      "evidence": "经验总结"
+    },
+    {
+      "id": 22,
+      "zh": "林迪效应",
+      "en": "Lindy Effect",
+      "domain": "战略与商业",
+      "evidence": "经验总结"
+    },
+    {
+      "id": 23,
+      "zh": "二阶思维",
+      "en": "Second-Order Thinking",
+      "domain": "决策与认知",
+      "evidence": "经验总结"
+    },
+    {
+      "id": 24,
+      "zh": "贝叶斯更新",
+      "en": "Bayes Updating",
+      "domain": "决策与认知",
+      "evidence": "学术共识"
+    },
+    {
+      "id": 25,
+      "zh": "期望值决策",
+      "en": "Expected Value",
+      "domain": "决策与认知",
+      "evidence": "学术共识"
+    },
+    {
+      "id": 26,
+      "zh": "预防性后悔",
+      "en": "Regret Minimization",
+      "domain": "决策与认知",
+      "evidence": "实证支持"
+    },
+    {
+      "id": 27,
+      "zh": "可逆性判断",
+      "en": "Reversibility",
+      "domain": "决策与认知",
+      "evidence": "经验总结"
+    },
+    {
+      "id": 28,
+      "zh": "门槛率",
+      "en": "Hurdle Rate",
+      "domain": "决策与认知",
+      "evidence": "经验总结"
+    },
+    {
+      "id": 29,
+      "zh": "前置思考",
+      "en": "Premortem",
+      "domain": "决策与认知",
+      "evidence": "实证支持"
+    },
+    {
+      "id": 30,
+      "zh": "地图-疆域",
+      "en": "Map-Territory",
+      "domain": "决策与认知",
+      "evidence": "经验总结"
+    },
+    {
+      "id": 31,
+      "zh": "希钦斯剃刀",
+      "en": "Hitchens's Razor",
+      "domain": "决策与认知",
+      "evidence": "经验总结"
+    },
+    {
+      "id": 32,
+      "zh": "逆向选择防护",
+      "en": "Adverse Selection",
+      "domain": "决策与认知",
+      "evidence": "学术共识"
+    },
+    {
+      "id": 33,
+      "zh": "系统思维",
+      "en": "Systems Thinking",
+      "domain": "系统与组织",
+      "evidence": "隐喻借用"
+    },
+    {
+      "id": 34,
+      "zh": "约束理论",
+      "en": "Theory of Constraints",
+      "domain": "系统与组织",
+      "evidence": "经验总结"
+    },
+    {
+      "id": 35,
+      "zh": "帕金森定律",
+      "en": "Parkinson's Law",
+      "domain": "系统与组织",
+      "evidence": "经验总结"
+    },
+    {
+      "id": 36,
+      "zh": "彼得原理",
+      "en": "Peter Principle",
+      "domain": "系统与组织",
+      "evidence": "有争议"
+    },
+    {
+      "id": 37,
+      "zh": "破窗效应",
+      "en": "Broken Windows",
+      "domain": "系统与组织",
+      "evidence": "有争议"
+    },
+    {
+      "id": 38,
+      "zh": "飞轮效应",
+      "en": "Flywheel",
+      "domain": "系统与组织",
+      "evidence": "实证支持"
+    },
+    {
+      "id": 39,
+      "zh": "网络效应",
+      "en": "Network Effects",
+      "domain": "系统与组织",
+      "evidence": "实证支持"
+    },
+    {
+      "id": 40,
+      "zh": "路径依赖",
+      "en": "Path Dependence",
+      "domain": "系统与组织",
+      "evidence": "实证支持"
+    },
+    {
+      "id": 41,
+      "zh": "涌现",
+      "en": "Emergence",
+      "domain": "系统与组织",
+      "evidence": "隐喻借用"
+    },
+    {
+      "id": 42,
+      "zh": "延迟",
+      "en": "Delays",
+      "domain": "系统与组织",
+      "evidence": "学术共识"
+    },
+    {
+      "id": 43,
+      "zh": "勒沙特列原理",
+      "en": "Le Chatelier's Principle",
+      "domain": "系统与组织",
+      "evidence": "隐喻借用"
+    },
+    {
+      "id": 44,
+      "zh": "耗散结构",
+      "en": "Dissipative Structures",
+      "domain": "系统与组织",
+      "evidence": "隐喻借用"
+    },
+    {
+      "id": 45,
+      "zh": "梅特卡夫定律",
+      "en": "Metcalfe's Law",
+      "domain": "系统与组织",
+      "evidence": "实证支持"
+    },
+    {
+      "id": 46,
+      "zh": "复杂适应系统",
+      "en": "Complex Adaptive Systems",
+      "domain": "系统与组织",
+      "evidence": "隐喻借用"
+    },
+    {
+      "id": 47,
+      "zh": "芒格五秒追问",
+      "en": "Munger's Five Whys",
+      "domain": "人际与影响力",
+      "evidence": "经验总结"
+    },
+    {
+      "id": 48,
+      "zh": "社会认同",
+      "en": "Social Proof",
+      "domain": "人际与影响力",
+      "evidence": "学术共识"
+    },
+    {
+      "id": 49,
+      "zh": "互惠陷阱防护",
+      "en": "Reciprocity",
+      "domain": "人际与影响力",
+      "evidence": "学术共识"
+    },
+    {
+      "id": 50,
+      "zh": "权威偏见防护",
+      "en": "Authority Bias",
+      "domain": "人际与影响力",
+      "evidence": "学术共识"
+    },
+    {
+      "id": 51,
+      "zh": "峰终定律",
+      "en": "Peak-End Rule",
+      "domain": "人际与影响力",
+      "evidence": "学术共识"
+    },
+    {
+      "id": 52,
+      "zh": "故事偏见防护",
+      "en": "Narrative Bias",
+      "domain": "人际与影响力",
+      "evidence": "学术共识"
+    },
+    {
+      "id": 53,
+      "zh": "影响力六原则",
+      "en": "Six Principles of Influence",
+      "domain": "人际与影响力",
+      "evidence": "学术共识"
+    },
+    {
+      "id": 54,
+      "zh": "非暴力沟通",
+      "en": "Nonviolent Communication",
+      "domain": "人际与影响力",
+      "evidence": "经验总结"
+    },
+    {
+      "id": 55,
+      "zh": "换位思考",
+      "en": "Perspective Taking",
+      "domain": "人际与影响力",
+      "evidence": "学术共识"
+    },
+    {
+      "id": 56,
+      "zh": "心理账户",
+      "en": "Mental Accounting",
+      "domain": "人际与影响力",
+      "evidence": "学术共识"
+    },
+    {
+      "id": 57,
+      "zh": "禀赋效应",
+      "en": "Endowment Effect",
+      "domain": "人际与影响力",
+      "evidence": "学术共识"
+    },
+    {
+      "id": 58,
+      "zh": "双曲贴现",
+      "en": "Hyperbolic Discounting",
+      "domain": "人际与影响力",
+      "evidence": "学术共识"
+    },
+    {
+      "id": 59,
+      "zh": "幸存者偏差防护",
+      "en": "Survivorship Bias",
+      "domain": "成长与逆商",
+      "evidence": "学术共识"
+    },
+    {
+      "id": 60,
+      "zh": "均值回归",
+      "en": "Regression to the Mean",
+      "domain": "成长与逆商",
+      "evidence": "学术共识"
+    },
+    {
+      "id": 61,
+      "zh": "能力圈",
+      "en": "Circle of Competence",
+      "domain": "成长与逆商",
+      "evidence": "经验总结"
+    },
+    {
+      "id": 62,
+      "zh": "甜蜜点",
+      "en": "Sweet Spot",
+      "domain": "成长与逆商",
+      "evidence": "经验总结"
+    },
+    {
+      "id": 63,
+      "zh": "80小时法则",
+      "en": "80-Hour Rule",
+      "domain": "成长与逆商",
+      "evidence": "经验总结"
+    },
+    {
+      "id": 64,
+      "zh": "反馈循环",
+      "en": "Feedback Loops",
+      "domain": "成长与逆商",
+      "evidence": "学术共识"
+    },
+    {
+      "id": 65,
+      "zh": "刻意练习",
+      "en": "Deliberate Practice",
+      "domain": "成长与逆商",
+      "evidence": "实证支持"
+    },
+    {
+      "id": 66,
+      "zh": "反证思维",
+      "en": "Falsification",
+      "domain": "成长与逆商",
+      "evidence": "经验总结"
+    },
+    {
+      "id": 67,
+      "zh": "参考类预测",
+      "en": "Reference Class Forecasting",
+      "domain": "进阶决策程序",
+      "evidence": "实证支持"
+    },
+    {
+      "id": 68,
+      "zh": "凯利公式",
+      "en": "Kelly Criterion",
+      "domain": "进阶决策程序",
+      "evidence": "学术共识"
+    },
+    {
+      "id": 69,
+      "zh": "探索-利用",
+      "en": "Explore-Exploit",
+      "domain": "进阶决策程序",
+      "evidence": "学术共识"
+    },
+    {
+      "id": 70,
+      "zh": "机会成本",
+      "en": "Opportunity Cost",
+      "domain": "决策与认知",
+      "evidence": "学术共识"
+    },
+    {
+      "id": 71,
+      "zh": "谈判底线",
+      "en": "BATNA",
+      "domain": "人际与影响力",
+      "evidence": "学术共识"
+    },
+    {
+      "id": 72,
+      "zh": "安全边际",
+      "en": "Margin of Safety",
+      "domain": "决策与认知",
+      "evidence": "经验总结"
+    },
+    {
+      "id": 73,
+      "zh": "选择权",
+      "en": "Optionality",
+      "domain": "战略与商业",
+      "evidence": "经验总结"
+    },
+    {
+      "id": 74,
+      "zh": "古德哈特定律",
+      "en": "Goodhart's Law",
+      "domain": "系统与组织",
+      "evidence": "学术共识"
+    },
+    {
+      "id": 75,
+      "zh": "存量与流量",
+      "en": "Stocks and Flows",
+      "domain": "系统与组织",
+      "evidence": "学术共识"
+    },
+    {
+      "id": 76,
+      "zh": "认知失调",
+      "en": "Cognitive Dissonance",
+      "domain": "人际与影响力",
+      "evidence": "学术共识"
+    },
+    {
+      "id": 77,
+      "zh": "规划谬误",
+      "en": "Planning Fallacy",
+      "domain": "决策与认知",
+      "evidence": "学术共识"
+    }
+  ],
+  "scenarios": [
+    {
+      "when_zh": "已投入很多，要不要继续",
+      "when_en": "Continue investing spent money",
+      "primary": 1,
+      "secondary": 25
+    },
+    {
+      "when_zh": "两个 offer / 两个方案选一",
+      "when_en": "Two offers / jobs",
+      "primary": 9,
+      "secondary": 27
+    },
+    {
+      "when_zh": "创业、转行、重大转向",
+      "when_en": "Start career / major change",
+      "primary": 4,
+      "secondary": 29
+    },
+    {
+      "when_zh": "价格 / 薪资谈判",
+      "when_en": "Price / salary negotiation",
+      "primary": 71,
+      "secondary": 14
+    },
+    {
+      "when_zh": "自我怀疑、能力判断",
+      "when_en": "Self-doubt",
+      "primary": 61,
+      "secondary": 10
+    },
+    {
+      "when_zh": "资源有限，先做什么",
+      "when_en": "Resource allocation",
+      "primary": 3,
+      "secondary": 70
+    },
+    {
+      "when_zh": "风险评估",
+      "when_en": "Risk assessment",
+      "primary": 29,
+      "secondary": 2
+    },
+    {
+      "when_zh": "竞争策略",
+      "when_en": "Competition strategy",
+      "primary": 13,
+      "secondary": 14
+    },
+    {
+      "when_zh": "增长引擎",
+      "when_en": "Growth engine",
+      "primary": 38,
+      "secondary": 39
+    },
+    {
+      "when_zh": "该不该止损 / 坚持",
+      "when_en": "Cut losses or persist",
+      "primary": 1,
+      "secondary": 12
+    },
+    {
+      "when_zh": "工期 / 预算 / 成功率预测",
+      "when_en": "Duration / budget / success-rate forecast",
+      "primary": 67,
+      "secondary": 77
+    },
+    {
+      "when_zh": "仓位 / 投入比例该多大",
+      "when_en": "How much to stake",
+      "primary": 68,
+      "secondary": 72
+    },
+    {
+      "when_zh": "资源分配 / 要不要试新方向",
+      "when_en": "Allocate resources / try something new",
+      "primary": 69,
+      "secondary": 73
+    },
+    {
+      "when_zh": "大额消费 / 理财决策",
+      "when_en": "Big purchase / money decision",
+      "primary": 72,
+      "secondary": 70
+    },
+    {
+      "when_zh": "复盘：指标涨了但业务没变好",
+      "when_en": "Retro: metrics up but business flat",
+      "primary": 74,
+      "secondary": 75
+    }
+  ],
+  "crossref": [
+    {
+      "concept": "沉没成本",
+      "tm": 1,
+      "bc": 29,
+      "note": "TM=工具视角,BC=偏差视角"
+    },
+    {
+      "concept": "锚定",
+      "tm": 5,
+      "bc": 2,
+      "note": "TM=重新锚定,BC=被绑架"
+    },
+    {
+      "concept": "确认偏误",
+      "tm": 6,
+      "bc": 1,
+      "note": "BC含完整纠正方法"
+    },
+    {
+      "concept": "框架效应",
+      "tm": 8,
+      "bc": 10,
+      "note": ""
+    },
+    {
+      "concept": "从众效应",
+      "tm": null,
+      "bc": 6,
+      "note": "TM#48社会认同=正向版"
+    },
+    {
+      "concept": "过度自信",
+      "tm": null,
+      "bc": 7,
+      "note": ""
+    },
+    {
+      "concept": "损失厌恶",
+      "tm": null,
+      "bc": 5,
+      "note": ""
+    },
+    {
+      "concept": "后见之明",
+      "tm": null,
+      "bc": 4,
+      "note": ""
+    },
+    {
+      "concept": "幸存者偏差",
+      "tm": 59,
+      "bc": 3,
+      "note": ""
+    },
+    {
+      "concept": "心理账户",
+      "tm": 56,
+      "bc": 31,
+      "note": ""
+    },
+    {
+      "concept": "禀赋效应",
+      "tm": 57,
+      "bc": 30,
+      "note": ""
+    },
+    {
+      "concept": "双曲贴现",
+      "tm": 58,
+      "bc": 32,
+      "note": ""
+    },
+    {
+      "concept": "成长型思维",
+      "tm": 10,
+      "bc": null,
+      "note": ""
+    },
+    {
+      "concept": "认知失调",
+      "tm": 76,
+      "bc": 14,
+      "note": "TM=找补的驱动力,BC=找补之后的推理"
+    },
+    {
+      "concept": "低估工期预算",
+      "tm": 77,
+      "bc": 7,
+      "note": "TM#77规划谬误→解药 TM#67参考类预测"
+    }
+  ],
+  "links": [
+    {
+      "from": 70,
+      "to": 16,
+      "note": "边际思维看增量，机会成本看被放弃的最优替代"
+    },
+    {
+      "from": 71,
+      "to": 5,
+      "note": "锚定决定开价区间，BATNA 决定你能不能走"
+    },
+    {
+      "from": 72,
+      "to": 68,
+      "note": "凯利定量（平均最优），安全边际定缓冲（最坏能扛）"
+    },
+    {
+      "from": 73,
+      "to": 4,
+      "note": "选择权是反脆弱的持仓形态"
+    },
+    {
+      "from": 17,
+      "to": 73,
+      "note": "黑天鹅防御靠凸性持仓，不靠预测"
+    },
+    {
+      "from": 74,
+      "to": 64,
+      "note": "指标博弈经反馈回路自我强化"
+    },
+    {
+      "from": 33,
+      "to": 75,
+      "note": "系统思维落地：先画存量和它的进出水管"
+    },
+    {
+      "from": 75,
+      "to": 42,
+      "note": "存量是延迟的来源，水位不会一夜改变"
+    },
+    {
+      "from": 76,
+      "to": 1,
+      "note": "失调是沉没成本的心理发动机"
+    },
+    {
+      "from": 77,
+      "to": 67,
+      "note": "规划谬误是病因，参考类预测是药方"
+    },
+    {
+      "from": 59,
+      "to": 77,
+      "note": "参考类别被幸存者偏差污染会把基准压低"
+    },
+    {
+      "from": 32,
+      "to": 71,
+      "note": "对方死活不让价，可能他退路比你好"
+    }
+  ],
+  "entries": [
+    {
+      "group": "选择与决策",
+      "header": "默认模型",
+      "rows": [
+        {
+          "when": "\"我该不该跳槽/转行\"",
+          "level": "L3",
+          "models": "#9决策矩阵 + #4反脆弱 + #27可逆性"
+        },
+        {
+          "when": "\"两个offer怎么选\"",
+          "level": "L3",
+          "models": "#9决策矩阵 + #27可逆性"
+        },
+        {
+          "when": "\"要不要创业\"",
+          "level": "L3",
+          "models": "#4反脆弱 + #73选择权 + #29前置思考"
+        },
+        {
+          "when": "\"要不要继续投\"",
+          "level": "L3+BC",
+          "models": "#1沉没成本 + #16边际"
+        },
+        {
+          "when": "\"要不要止损/坚持\"",
+          "level": "L3",
+          "models": "#1沉没 + #12复利"
+        },
+        {
+          "when": "\"这个项目多久能做完/预算多少\"",
+          "level": "L2",
+          "models": "#77规划谬误 + #67参考类预测 + #60均值回归"
+        },
+        {
+          "when": "\"这笔钱该投多少\"",
+          "level": "L3",
+          "models": "#68凯利公式 + #72安全边际 + #25期望值"
+        },
+        {
+          "when": "\"这个报价/收购价合理吗\"",
+          "level": "L2",
+          "models": "#72安全边际 + #70机会成本"
+        }
+      ]
+    },
+    {
+      "group": "理解与分析",
+      "header": "默认模型",
+      "rows": [
+        {
+          "when": "\"为什么会这样/底层逻辑\"",
+          "level": "L2",
+          "models": "#2逆向 + #23二阶思维"
+        },
+        {
+          "when": "\"本质是什么\"",
+          "level": "L3",
+          "models": "第一性原理 + #4反脆弱"
+        },
+        {
+          "when": "\"有什么影响\"",
+          "level": "L2",
+          "models": "#23二阶思维"
+        },
+        {
+          "when": "\"指标涨了但业务没变好\"",
+          "level": "L2",
+          "models": "#74古德哈特 + #75存量与流量"
+        }
+      ]
+    },
+    {
+      "group": "策略与行动",
+      "header": "默认模型",
+      "rows": [
+        {
+          "when": "\"怎么做/如何提高效率\"",
+          "level": "L2",
+          "models": "#3二八 + MVP（库外）"
+        },
+        {
+          "when": "\"资源有限,先做什么\"",
+          "level": "L2",
+          "models": "#3二八 + #70机会成本"
+        },
+        {
+          "when": "\"要不要试新渠道/新方向\"",
+          "level": "L2",
+          "models": "#69探索-利用 + #73选择权"
+        },
+        {
+          "when": "\"谈判策略\"",
+          "level": "L3+BC",
+          "models": "#71谈判底线 + #14博弈论 + #5锚定"
+        },
+        {
+          "when": "\"竞争策略\"",
+          "level": "L3",
+          "models": "#13护城河 + #14博弈论"
+        }
+      ]
+    },
+    {
+      "group": "自我与成长",
+      "header": "默认模型",
+      "rows": [
+        {
+          "when": "\"我适合做什么\"",
+          "level": "L3",
+          "models": "#62甜蜜点 + #10成长型"
+        },
+        {
+          "when": "\"怀疑自己行不行\"",
+          "level": "L2",
+          "models": "BC#19冒充者 + #10成长型"
+        },
+        {
+          "when": "\"我为什么一直给自己找理由\"",
+          "level": "L2",
+          "models": "#76认知失调 + BC#14动机性推理"
+        },
+        {
+          "when": "\"复盘上个季度\"",
+          "level": "L3",
+          "models": "#12复利 + #74古德哈特"
+        }
+      ]
+    },
+    {
+      "group": "日常生活（普通人高频场景）",
+      "header": "默认模型/偏差",
+      "rows": [
+        {
+          "when": "\"该不该分手/结婚\"",
+          "level": "L3",
+          "models": "#4反脆弱 + #27可逆性 + BC#5损失厌恶"
+        },
+        {
+          "when": "\"要不要生孩子\"",
+          "level": "L3",
+          "models": "#29前置思考 + #4反脆弱"
+        },
+        {
+          "when": "\"孩子不听话/叛逆期怎么办\"",
+          "level": "L2",
+          "models": "#55换位思考 + #50权威偏见防护"
+        },
+        {
+          "when": "\"怎么和伴侣沟通\"",
+          "level": "L2",
+          "models": "#55换位思考 + #8框架效应"
+        },
+        {
+          "when": "\"该不该借钱给亲戚\"",
+          "level": "L2",
+          "models": "#1沉没成本 + #27可逆性"
+        },
+        {
+          "when": "\"父母催婚怎么应对\"",
+          "level": "L2",
+          "models": "BC#6从众(文化适配) + #55换位思考"
+        },
+        {
+          "when": "\"最近很焦虑/睡不好\"",
+          "level": "L1",
+          "models": "建议专业帮助 + BC#7过度自信(对未来的判断)"
+        },
+        {
+          "when": "\"怎么存钱/要不要买保险\"",
+          "level": "L2",
+          "models": "BC#32双曲贴现 + #72安全边际"
+        },
+        {
+          "when": "\"要不要贷款/提前消费\"",
+          "level": "L2",
+          "models": "#70机会成本 + BC#31心理账户"
+        },
+        {
+          "when": "\"今天吃什么/怎么省钱\"",
+          "level": "L0",
+          "models": "直接答 + 一句增值"
+        },
+        {
+          "when": "\"该不该在大城市留下来\"",
+          "level": "L3",
+          "models": "#4反脆弱 + #62甜蜜点 + #16边际"
+        },
+        {
+          "when": "\"怎么判断一个人值不值得深交\"",
+          "level": "L2",
+          "models": "BC#25光环效应 + BC#26基本归因"
+        }
+      ]
+    },
+    {
+      "group": "偏差检查入口",
+      "header": "默认偏差",
+      "rows": [
+        {
+          "when": "\"帮我看看这个决定\"",
+          "level": "L3",
+          "models": "BC#1确认 + BC#2锚定 + BC#7过度自信"
+        },
+        {
+          "when": "\"我刚做了投资决定\"",
+          "level": "L3",
+          "models": "BC#5损失 + BC#29沉没 + BC#1确认"
+        },
+        {
+          "when": "\"团队一致同意,但我感觉不对\"",
+          "level": "L3",
+          "models": "BC#23群体 + BC#6从众"
+        },
+        {
+          "when": "\"我100%确定\"",
+          "level": "L3",
+          "models": "BC#7过度 + BC#1确认 + BC#36基础概率"
+        },
+        {
+          "when": "\"所有/每个/总是/绝不\"",
+          "level": "L2",
+          "models": "BC#3幸存者 + BC#36基础概率"
+        },
+        {
+          "when": "\"每次都说下季度就能做完\"",
+          "level": "L2",
+          "models": "#77规划谬误 + BC#7过度自信"
+        }
+      ]
+    }
+  ],
+  "biases": [
+    {
+      "id": 1,
+      "zh": "确认偏误"
+    },
+    {
+      "id": 2,
+      "zh": "锚定效应"
+    },
+    {
+      "id": 3,
+      "zh": "幸存者偏差"
+    },
+    {
+      "id": 4,
+      "zh": "后见之明"
+    },
+    {
+      "id": 5,
+      "zh": "损失厌恶"
+    },
+    {
+      "id": 6,
+      "zh": "从众效应"
+    },
+    {
+      "id": 7,
+      "zh": "过度自信"
+    },
+    {
+      "id": 8,
+      "zh": "自我服务偏差"
+    },
+    {
+      "id": 9,
+      "zh": "可得性启发"
+    },
+    {
+      "id": 10,
+      "zh": "框架效应"
+    },
+    {
+      "id": 11,
+      "zh": "叙事谬误"
+    },
+    {
+      "id": 12,
+      "zh": "信息茧房"
+    },
+    {
+      "id": 13,
+      "zh": "虚假均势"
+    },
+    {
+      "id": 14,
+      "zh": "动机性推理"
+    },
+    {
+      "id": 15,
+      "zh": "德克萨斯神枪手"
+    },
+    {
+      "id": 16,
+      "zh": "达克效应"
+    },
+    {
+      "id": 17,
+      "zh": "现状偏差"
+    },
+    {
+      "id": 18,
+      "zh": "自我设限"
+    },
+    {
+      "id": 19,
+      "zh": "冒充者综合征"
+    },
+    {
+      "id": 20,
+      "zh": "聚光灯效应"
+    },
+    {
+      "id": 21,
+      "zh": "自我投射"
+    },
+    {
+      "id": 22,
+      "zh": "道德许可偏差"
+    },
+    {
+      "id": 23,
+      "zh": "群体思维"
+    },
+    {
+      "id": 24,
+      "zh": "权威偏见"
+    },
+    {
+      "id": 25,
+      "zh": "光环效应"
+    },
+    {
+      "id": 26,
+      "zh": "基本归因错误"
+    },
+    {
+      "id": 27,
+      "zh": "社会比较"
+    },
+    {
+      "id": 28,
+      "zh": "虚拟认同"
+    },
+    {
+      "id": 29,
+      "zh": "沉没成本谬误"
+    },
+    {
+      "id": 30,
+      "zh": "禀赋效应"
+    },
+    {
+      "id": 31,
+      "zh": "心理账户"
+    },
+    {
+      "id": 32,
+      "zh": "双曲贴现"
+    },
+    {
+      "id": 33,
+      "zh": "赌徒谬误"
+    },
+    {
+      "id": 34,
+      "zh": "热手谬误"
+    },
+    {
+      "id": 35,
+      "zh": "均值回归忽视"
+    },
+    {
+      "id": 36,
+      "zh": "基础概率忽视"
+    },
+    {
+      "id": 37,
+      "zh": "合取谬误"
+    },
+    {
+      "id": 38,
+      "zh": "条件概率颠倒"
+    },
+    {
+      "id": 39,
+      "zh": "过度拟合"
+    }
+  ],
+  "sources": [
+    {
+      "id": 1,
+      "refs": [
+        {
+          "title": "Arkes & Blumer, The Psychology of Sunk Cost, OBHDP, 1985",
+          "level": "verified"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "refs": [
+        {
+          "title": "Taleb, Antifragile, 2012（概念性著作，非对照实验）",
+          "level": "secondary"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "refs": [
+        {
+          "title": "Tversky & Kahneman, Judgment under Uncertainty, Science, 1974",
+          "level": "verified"
+        },
+        {
+          "title": "Galinsky & Mussweiler, First Offers as Anchors, JPSP, 2001",
+          "level": "verified"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "refs": [
+        {
+          "title": "Wason, On the Failure to Eliminate Hypotheses, QJEP, 1960",
+          "level": "verified"
+        },
+        {
+          "title": "Nickerson, Confirmation Bias: A Ubiquitous Phenomenon, Review of General Psychology, 1998",
+          "level": "verified"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "refs": [
+        {
+          "title": "von Neumann & Morgenstern, Theory of Games and Economic Behavior, 1944",
+          "level": "verified"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "refs": [
+        {
+          "title": "Dweck, Mindset, 2006（原研究）",
+          "level": "secondary"
+        },
+        {
+          "title": "Sisk et al., To What Extent and Under Which Circumstances Are Growth Mind-Sets Important to Academic Achievement?, Psychological Science, 2018（元分析，效应量小于早期宣传）",
+          "level": "verified"
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "refs": [
+        {
+          "title": "数学恒等式；(1+r)^n 的行为学论述见 Munger, Poor Charlie's Almanack，属经验总结",
+          "level": "secondary"
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "refs": [
+        {
+          "title": "Taleb, The Black Swan, 2007（概念性著作）",
+          "level": "secondary"
+        }
+      ]
+    },
+    {
+      "id": 24,
+      "refs": [
+        {
+          "title": "Bayes, An Essay towards Solving a Problem in the Doctrine of Chances, 1763",
+          "level": "verified"
+        }
+      ]
+    },
+    {
+      "id": 25,
+      "refs": [
+        {
+          "title": "von Neumann & Morgenstern, 1944；Kahneman & Tversky, Prospect Theory, Econometrica, 1979",
+          "level": "verified"
+        }
+      ]
+    },
+    {
+      "id": 29,
+      "refs": [
+        {
+          "title": "Klein, Performing a Project Premortem, HBR, 2007",
+          "level": "verified"
+        },
+        {
+          "title": "Mitchell, Russo & Pennington, Back to the Future, JBDM, 1989",
+          "level": "verified"
+        }
+      ]
+    },
+    {
+      "id": 59,
+      "refs": [
+        {
+          "title": "Wald, A Method of Estimating Plane Vulnerability Based on Damage of Survivors, 1943（飞机装甲）",
+          "level": "verified"
+        }
+      ]
+    },
+    {
+      "id": 60,
+      "refs": [
+        {
+          "title": "Galton, Regression towards Mediocrity in Hereditary Stature, 1886",
+          "level": "verified"
+        }
+      ]
+    },
+    {
+      "id": 67,
+      "refs": [
+        {
+          "title": "Flyvbjerg, From Nobel Prize to Project Management, Project Management Journal, 2006",
+          "level": "verified"
+        },
+        {
+          "title": "Kahneman & Tversky, 1979（基础概率忽视）",
+          "level": "verified"
+        }
+      ]
+    },
+    {
+      "id": 68,
+      "refs": [
+        {
+          "title": "Kelly, A New Interpretation of Information Rate, Bell System Technical Journal, 1956",
+          "level": "verified"
+        }
+      ]
+    },
+    {
+      "id": 70,
+      "refs": [
+        {
+          "title": "Friedrich von Wieser，《自然价值》(Natural Value)，1889",
+          "level": "secondary"
+        },
+        {
+          "title": "Milton Friedman，《There's No Such Thing as a Free Lunch》，1975",
+          "level": "secondary"
+        },
+        {
+          "title": "Paul Samuelson，《经济学》第一版（大学成本例题），1948",
+          "level": "secondary"
+        }
+      ]
+    },
+    {
+      "id": 71,
+      "refs": [
+        {
+          "title": "Fisher & Ury，《Getting to Yes》，1981",
+          "level": "secondary"
+        },
+        {
+          "title": "Nash, The Bargaining Problem, Econometrica 18(2), 1950",
+          "level": "verified"
+        },
+        {
+          "title": "Rubinstein, Perfect Equilibrium in a Bargaining Model, Econometrica 50(1), 1982",
+          "level": "verified"
+        }
+      ]
+    },
+    {
+      "id": 72,
+      "refs": [
+        {
+          "title": "Benjamin Graham，《The Intelligent Investor》第 20 章，1949",
+          "level": "secondary"
+        },
+        {
+          "title": "Graham & Dodd，《Security Analysis》，1934",
+          "level": "secondary"
+        }
+      ]
+    },
+    {
+      "id": 73,
+      "refs": [
+        {
+          "title": "Nassim Taleb，《Antifragile》论选择权，2012",
+          "level": "secondary"
+        },
+        {
+          "title": "Aristotle，《政治学》第一卷 1259a（泰勒斯包租榨油机）",
+          "level": "secondary"
+        }
+      ]
+    },
+    {
+      "id": 74,
+      "refs": [
+        {
+          "title": "Goodhart, Problems of Monetary Management: The UK Experience, 1975",
+          "level": "secondary"
+        },
+        {
+          "title": "Strathern, 'Improving ratings': audit in the British University system, European Review, 1997",
+          "level": "verified"
+        },
+        {
+          "title": "Muller，《The Tyranny of Metrics》，2018",
+          "level": "secondary"
+        }
+      ]
+    },
+    {
+      "id": 75,
+      "refs": [
+        {
+          "title": "Donella Meadows，《Thinking in Systems》第 3 章，2008",
+          "level": "secondary"
+        },
+        {
+          "title": "Jay Forrester，《Industrial Dynamics》，1961",
+          "level": "secondary"
+        },
+        {
+          "title": "Sterman & Booth Sweeney, Modeling errors in simple accumulator tasks, Climatic Change, 2007",
+          "level": "verified"
+        }
+      ]
+    },
+    {
+      "id": 76,
+      "refs": [
+        {
+          "title": "Festinger，《A Theory of Cognitive Dissonance》, Stanford University Press, 1957",
+          "level": "secondary"
+        },
+        {
+          "title": "Festinger & Carlsmith, Cognitive consequences of forced compliance, JASP 58, 1959",
+          "level": "verified"
+        },
+        {
+          "title": "Heine & Lehman, Culture, dissonance, and self-affirmation, PSPB, 1997（跨文化可重复性限制）",
+          "level": "verified"
+        }
+      ]
+    },
+    {
+      "id": 77,
+      "refs": [
+        {
+          "title": "Kahneman & Tversky, Intuitive Prediction: Biases and Corrective Procedures, 1979",
+          "level": "verified"
+        },
+        {
+          "title": "Buehler, Griffin & Ross, Exploring the Planning Fallacy, JPSP, 1994",
+          "level": "verified"
+        },
+        {
+          "title": "Flyvbjerg, Holm & Buhl, Underestimating Costs in Public Works Projects, JAPA, 2002",
+          "level": "verified"
+        }
+      ]
+    }
+  ]
+}

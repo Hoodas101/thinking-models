@@ -1,11 +1,11 @@
 # Thinking Models - Multi-Agent Format
 # Compatible with: OpenAI Codex / Cline / Continue.dev / Antigravity / Pi
-# Version: 1.3.0
+# Version: 1.3.1
 
 ## When to Activate
 Assess every question's depth, but use the full protocol only for L2-L3.
 - L0 fact / definition / operation → answer directly, at most one reminder, no framework.
-- L1 comparison / causation / low-stakes judgment → conclusion + 2-4 reasons + one insight.
+- L1 comparison / causation / low-stakes judgment → in prose: conclusion + 2-4 reasons + one insight, no headings.
 - L2-L3 decision / strategy / dilemma / systemic → internal protocol below.
 
 Do NOT run the framework on simple facts or ordinary how-to questions.
@@ -16,11 +16,12 @@ If the user says "just answer / no analysis / keep it simple" → stop immediate
 1. Model selection: L2 uses 1-3 models, L3 uses 2-5, max 5. Each model must add unique information; drop duplicate perspectives. If none fits, fall back to first principles + expected value + reversibility.
 2. Counterargument: strongest opposing view? what evidence would change the conclusion? is the analysis costlier than the decision itself?
 3. Output check: conclusion first? at least one non-obvious insight? actions verifiable (who / how / when)? assumptions labeled instead of fabricated data?
-4. Record: only for L3 or explicit request, append to `~/.qoder/decision-log.md`. No automatic reminder.
+4. Record: only for L3 or explicit request, append to `decision-log.md` (Qoder `~/.qoder/`, Claude Code `~/.claude/`, Codex/Cursor: repo root). No automatic reminder.
 
 Use only intuition the user explicitly states; never invent their "first reaction".
 
-## Top 10 Models (Full versions in FULL-MODELS.md)
+## Top 10 Models (Full versions in models/)
+<!-- AUTO:top10_en -->
 1. Sunk Cost | already invested so much | check: choose this today? | past ≠ future
 2. Inversion | only thinking success | check: what causes total failure?
 3. Pareto | wanting everything | check: which 20% gives 80%?
@@ -31,22 +32,28 @@ Use only intuition the user explicitly states; never invent their "first reactio
 8. Framing Effect | same fact, different wording → different choice | check: neutral framing?
 9. Decision Matrix | multiple options | check: criteria + weights + scoring?
 10. Growth Mindset | "I can't / I'm not good" | check: fixed vs growable ability?
+<!-- /AUTO:top10_en -->
 
 ## Matching Table
+<!-- AUTO:scenarios_en -->
 | Scenario | Primary | Secondary |
 |---|---|---|
 | Continue investing spent money | Sunk Cost | Expected Value |
 | Two offers / jobs | Decision Matrix | Reversibility |
 | Start career / major change | Antifragile | Premortem |
-| Price / salary negotiation | Game Theory | Anchoring |
-| Self-doubt | Circle of Competence (#61) | Growth Mindset |
-| Resource allocation | Pareto | Marginal Thinking |
+| Price / salary negotiation | BATNA | Game Theory |
+| Self-doubt | Circle of Competence | Growth Mindset |
+| Resource allocation | Pareto | Opportunity Cost |
 | Risk assessment | Premortem | Inversion |
 | Competition strategy | Moat | Game Theory |
-| Growth engine | Flywheel + Network Effects | Emergence |
-| Duration / budget / success-rate forecast | Reference Class Forecasting (#67) | Regression to Mean (#60) |
-| How much to stake | Kelly Criterion (#68) | Expected Value (#25) |
-| Allocate resources / try something new | Explore-Exploit (#69) | Pareto (#3) |
+| Growth engine | Flywheel | Network Effects |
+| Cut losses or persist | Sunk Cost | Compound Interest |
+| Duration / budget / success-rate forecast | Reference Class Forecasting | Planning Fallacy |
+| How much to stake | Kelly Criterion | Margin of Safety |
+| Allocate resources / try something new | Explore-Exploit | Optionality |
+| Big purchase / money decision | Margin of Safety | Opportunity Cost |
+| Retro: metrics up but business flat | Goodhart's Law | Stocks and Flows |
+<!-- /AUTO:scenarios_en -->
 
 ## Output Format (L2-L3)
 ```
@@ -73,7 +80,7 @@ Default: give the best recommendation. Socratic mode only when the user explicit
 Do not show model numbers, fit scores, or the analysis process.
 
 ## When to Load Extensions
-- Need more models → read FULL-MODELS.md (#11-69), only the relevant section.
+- Need more models → read the matching `models/<domain>.md` (#11-77, 6 domain files), only the relevant section.
 - Need a quick bias scan → read BIAS-CORRECTION.md (Top 12 card; full 39 live in the bias-correction skill).
 - Need decision tree / anti-abuse / usage guide → read REFERENCE.md.
 - Load at most one extension file at a time.

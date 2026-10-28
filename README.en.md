@@ -1,26 +1,28 @@
 # Thinking Models
 
-> AI that doesn't stop at giving answers. It helps you avoid thinking traps, surface hidden assumptions, and make clearer decisions.
+> A mental-model skill that decides whether a question deserves depth: a direct answer for simple ones, models plus a counterargument pass and verifiable next steps when the stakes are real.
 
 [简体中文](README.md) | **English**
 
-![License](https://img.shields.io/badge/license-MIT-green) ![Models](https://img.shields.io/badge/models-69-blue) ![Biases](https://img.shields.io/badge/biases-39-orange) ![Platform](https://img.shields.io/badge/platform-Claude%20Code%20%7C%20Qoder%20%7C%20Cursor%20%7C%20Codex%20%7C%20Cline-purple)
+![License](https://img.shields.io/badge/license-MIT-green) ![Models](https://img.shields.io/badge/models-77-blue) ![Biases](https://img.shields.io/badge/biases-39-orange) ![Platform](https://img.shields.io/badge/platform-Claude%20Code%20%7C%20Qoder%20%7C%20Cursor%20%7C%20Codex%20%7C%20Cline-purple)
 
-**Version**: v1.3.0 | **Updated**: 2026-10-21 | **License**: MIT
+**Version**: v1.3.1 | **Updated**: 2026-10-29 | **License**: MIT
 
 ## What is this
 
-A mental-model skill that adjusts how much analysis it applies to the stakes of the question.
+A mental-model skill that adjusts how much analysis it applies to the stakes of the question. 77 models and 39 cognitive biases, but it usually picks just 1-3 of them.
 
 **It is NOT**: a tool that runs every question through a model checklist.
 **It IS**: depth grading first. Simple questions get a normal answer; decisions with consequences get models, a counterargument pass, and verifiable actions. It gives a direct recommendation by default; Socratic questioning is enabled only when you explicitly ask for it.
+
+The guardrails are in the repo, not in slogans: every model entry lives in one `tools/models.json`, and the six domain files plus the source list are generated from it. Six checks (numbering, broken links, counts, version, emoji, file coverage) must pass before anything ships, and prompt edits have to clear a 10-case behavioral regression suite against real models. Three candidate edits were measured and none beat the current wording, so the prompt stayed as it was; that is recorded in the CHANGELOG too.
 
 ## Who needs this
 
 | You are | What you face | What this skill does for you |
 |---|---|---|
 | **Everyday user** | Job changes, buying a home, kids' education, family conversations: life's high-stakes decisions with no one to consult | Breaks dilemmas into "conclusion → key analysis → actions → risk"; no more wishy-washy AI answers. Say "guide me" to switch into Socratic questioning |
-| **Tech / business professional** | Business judgment, competitive strategy, negotiation pricing, resource allocation: costly when wrong | 69 models matched to scenarios (game theory / moats / antifragility / expected value...); L2 picks 1-3 and L3 picks 2-5 for cross-checking, every conclusion passes a counterargument review |
+| **Tech / business professional** | Business judgment, competitive strategy, negotiation pricing, resource allocation: costly when wrong | 77 models matched to scenarios (game theory / moats / antifragility / expected value...); L2 picks 1-3 and L3 picks 2-5 for cross-checking, every conclusion passes a counterargument review |
 | **AI creator / developer** | You want your agent to have a "deep-thinking layer" that goes beyond parroting search results | Out-of-the-box graded intervention protocol + cross-platform formats (SKILL.md / AGENTS.md / .cursorrules); also a reference architecture for building your own reasoning skills |
 
 ## Before vs. after
@@ -40,14 +42,14 @@ This skill pairs with [bias-correction](https://github.com/Hoodas101/bias-correc
 | | thinking-models (this skill) | bias-correction |
 |---|---|---|
 | Positioning | **How to decide better**: analysis toolbox | **Where reasoning goes wrong**: error guardrail |
-| Content | 69 mental models + scenario matching table | 39 biases + dual-channel trigger detection |
+| Content | 77 mental models + scenario matching table | 39 biases + dual-channel trigger detection |
 | Trigger | Grades depth first; full protocol only for L2-L3 | Bias-signal driven, not active by default |
 
 The two share interoperable numbering (e.g., Sunk Cost = TM#1 = BC#29) and compatible protocols. **Installing both is recommended**, but each works standalone: with only this skill installed, bias checks fall back to the built-in `BIAS-CORRECTION.md` quick-reference card (Top 12); with bias-correction installed, call its full 39-bias analysis on demand instead of expanding two frameworks at once.
 
 ## Core capabilities
 
-- **69 mental models**: from Sunk Cost to Antifragility, across 6 domains: strategy / decision-making / systems / interpersonal / growth / advanced decision procedures
+- **77 mental models**: from Sunk Cost to Antifragility, across 6 domains: strategy / decision-making / systems / interpersonal / growth / advanced decision procedures
 - **Top 12 bias quick scan**: built in; the full 39-bias catalog lives in the sister skill [bias-correction](https://github.com/Hoodas101/bias-correction) and loads on demand
 - **Graded intervention**: L0/L1 answered directly; only L2-L3 activate the full internal protocol. No overkill on simple questions
 - **Direct recommendation by default**: Socratic questioning only when you explicitly say "guide me / help me think it through"; no questionnaire instead of an answer
@@ -65,7 +67,7 @@ The two share interoperable numbering (e.g., Sunk Cost = TM#1 = BC#29) and compa
 | Asking ChatGPT / Claude directly | Zero | Zero | Depends on how you ask | Nothing retained |
 | Writing your own system prompt | High (research the methodology yourself) | **Full cost every turn** (prompt is always resident) | Only what you thought to write | Maintenance burden on you |
 | Reading books on mental models | Medium (tens of hours) | Zero | Comprehensive, but no "match to the actual question" mechanism | Relies on willpower, rarely used |
-| **This skill** | 5 minutes | Entry loaded only when triggered (~2.9K tokens); extensions load on demand | 69 models + Top 12 bias quick scan, matched to scenarios | Active on deep questions + optional decision-log review |
+| **This skill** | 5 minutes | Entry loaded only when triggered (~2.9K tokens); extensions load on demand | 77 models + Top 12 bias quick scan, matched to scenarios | Active on deep questions + optional decision-log review |
 
 ## What actually changes
 
@@ -154,12 +156,18 @@ cp ~/.cc-switch/skills/thinking-models/AGENTS.md /path/to/your/project/AGENTS.md
 ```
 thinking-models/
 ├── SKILL.md            ← Entry file (~2.9K tokens), handles most scenarios
-├── FULL-MODELS.md      ← Extension: models #11-69, 6 domains
 ├── BIAS-CORRECTION.md  ← Extension: Top 12 bias quick-reference card (full 39 in bias-correction skill)
 ├── REFERENCE.md        ← Reference: decision trees / anti-abuse / usage guide / scenario entries
+├── models/             ← Extension: models #11-77 in 6 domain files; SOURCES.md lists verifiable sources
 ├── AGENTS.md           ← Cross-platform format (Codex/Cline/Continue)
 ├── .cursorrules        ← Cursor format
+├── tools/              ← Build: models.json (single source) + gen.py (generate) + check.py (validate)
+│                         Regression: cases.json (cases + gates) + regress.py (runs models)
 ├── install.sh          ← One-line install script
+├── docs/               ← Donation QR images (copied on install, ~400 KB)
+├── CHANGELOG.md        ← Version changes and measured A/B data
+├── CONTRIBUTING.md     ← Contribution flow and the checks to run
+├── LICENSE
 ├── README.md           ← Chinese version (default)
 └── README.en.md        ← This file
 ```
@@ -168,8 +176,8 @@ thinking-models/
 
 ```
 Question received → depth grading
-    ├─ L0 Simple (standard answer / pure fact)     → normal reply + at most 1 bonus line, no framework shown
-    ├─ L1 Medium (comparison / causation / light)  → conclusion + 2-4 reasons + 1 insight
+    ├─ L0 Simple (standard answer / pure fact)     → normal reply + at most 1 bonus line, no template headings
+    ├─ L1 Medium (comparison / causation / light)  → conclusion + 2-4 reasons + 1 insight, still no template headings
     └─ L2-L3 Deep (dilemma / systemic / stakes)    → internal protocol: facts & constraints → model selection
                                                      → counterargument check → output check
                                                      → decision log only at L3 / on explicit request
@@ -264,17 +272,19 @@ These three motivations lead to completely different five-year outcomes.
 
 Sit with these questions, then tell me your first reaction.
 
-## Evidence honesty: we don't pretend all 69 models have experimental backing
+## Evidence honesty: we don't pretend all 77 models have experimental backing
 
-The biggest disease of "mental model" content is selling Munger anecdotes and Kahneman RCTs as one undifferentiated pile. All 59 extension models (#11-69) carry an explicit evidence label (the 10 first-layer models are omitted as near-axioms). The distribution:
+The biggest disease of "mental model" content is selling Munger anecdotes and Kahneman RCTs as one undifferentiated pile. All 67 extension models (#11-77) carry an explicit evidence label (the 10 first-layer models are omitted as near-axioms). The distribution:
 
-| Label | Count | Meaning | How to use it |
+<!-- AUTO:evidence_en -->
+| Grade | Count | Meaning | How to use it |
 |---|---|---|---|
-| 📊 Academic consensus | 27 | Textbook-level findings in cognitive science / behavioral economics | Safe as grounds for a correction |
-| 📊 Empirically supported | 10 | Backed by specific studies (e.g. Flywheel traces to Collins' comparative research) | Primary reference; check that the study's context matches yours |
-| 💡 Practitioner heuristic | 14 | From Munger / Taleb-style experience, no systematic experiments | Use as a mirror for questions, not an authority for answers |
-| 🔄 Borrowed metaphor | 6 | Concepts imported from physics/chemistry/biology (Black Swan, dissipative structures, Le Chatelier) | **Caution**: a metaphor is an analogy, not a proof; cross-domain transfer is where errors concentrate |
-| ⚠️ Controversial | 2 | Real academic disagreement (Peter Principle, Broken Windows) | Entry point for thinking only, never the basis of a decision |
+| 1 Academic consensus | 28 | Textbook-level findings in cognitive science / behavioral economics | Safe as grounds for a correction |
+| 2 Empirically supported | 10 | Backed by specific studies (e.g. Flywheel traces to Collins' comparative research) | Primary reference; check that the study's context matches yours |
+| 3 Practitioner heuristic | 21 | From Munger / Taleb-style experience, no systematic experiments | Use as a mirror for questions, not an authority for answers |
+| 4 Borrowed metaphor | 6 | Concepts imported from physics/chemistry/biology (Black Swan, dissipative structures, Le Chatelier) | **Caution**: a metaphor is an analogy, not a proof; cross-domain transfer is where errors concentrate |
+| 5 Controversial | 2 | Real academic disagreement (Peter Principle, Broken Windows) | Entry point for thinking only, never the basis of a decision |
+<!-- /AUTO:evidence_en -->
 
 Three corollaries, and the reason we publish this table:
 
@@ -282,7 +292,7 @@ Three corollaries, and the reason we publish this table:
 2. **Controversial models stay, but get flagged.** The Peter Principle and Broken Windows have genuine insight and genuine empirical pushback; labeling beats hiding.
 3. **The skill's own protocol obeys this standard.** The internal protocol's counterargument check requires every conclusion to carry a confidence label (high/med/low). A tool against fake certainty can't fake its own.
 
-> Per-model labels live in `FULL-MODELS.md`. The sister skill bias-correction has a stronger base: 37 academic consensus + 2 experience-based out of 39 biases; bias research is an experiment-dense field.
+> Per-model labels live in `models/`. The sister skill bias-correction has a stronger base: 37 academic consensus + 2 experience-based out of 39 biases; bias research is an experiment-dense field.
 
 ## Design decisions: answers to "why isn't it more elaborate?"
 
@@ -324,7 +334,7 @@ No. L0/L1 don't start the protocol or show the framework; only L2-L3 (stakes / d
 **Q: How is this different from just telling the AI "analyze this with mental models"?**
 Three things: ① depth is graded for you, so a simple question doesn't get a wall of analysis and a real decision doesn't get a shrug; ② the internal protocol is enforced — facts and constraints, model selection, then a counterargument pass; freely-prompted AI tends to perform analysis rather than red-team it; ③ deep decisions can be logged for a 30-day outcome check, turning one-off chats into calibration data.
 
-**Q: Isn't 69 models bloat that degenerates into cargo-culting?**
+**Q: Isn't 77 models bloat that degenerates into cargo-culting?**
 The protocol is strict "quality over quantity": L2 uses 1-3 models, every model must add unique information gain, and repeating a perspective counts as a violation. The library is an armory, not a salvo you fire every time.
 
 **Q: Can I install thinking-models and bias-correction together? Conflicts?**
@@ -338,7 +348,7 @@ MIT, free. Growth goes through the CHANGELOG, and the evidence-labeling rule won
 
 ## Use cases
 
-### ✅ Great fit
+###  Great fit
 - Career decisions (job change / career switch / starting a business)
 - Interpersonal communication (parenting / partner / colleagues)
 - Spending decisions (house / insurance / big purchases)
@@ -346,12 +356,12 @@ MIT, free. Growth goes through the CHANGELOG, and the evidence-labeling rule won
 - Business analysis (competitive strategy / resource allocation / growth)
 - Everyday dilemmas (what to eat / where to go / which to pick)
 
-### ⚠️ Consult a professional first
+###  Consult a professional first
 - Mental health (depression / anxiety / self-harm)
 - Legal disputes (divorce / contracts / litigation)
 - Medical decisions (treatment plans / medication)
 
-### ❌ Not for
+###  Not for
 - Pure fact lookups (weather / dates / definitions)
 - Code errors / debugging
 - Creative entertainment (stories / jokes)

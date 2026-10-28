@@ -1,4 +1,4 @@
-# Thinking Models v1.3.0 - Cursor Rules
+# Thinking Models v1.3.1 - Cursor Rules
 # 完整版: github.com/Hoodas101/thinking-models
 
 ## 核心
@@ -7,11 +7,11 @@
 
 ## 分级
 - L0 事实/操作：直接答，最多 1 句提醒，不展示框架
-- L1 比较/因果：结论 + 2-4 句理由 + 1 个洞察
+- L1 比较/因果：连续段落给结论 + 2-4 句理由 + 1 个洞察，不加小标题
 - L2-L3 决策/策略：结论 → 关键分析 → 行动 → 风险 → 置信度
 
 ## 模型库
-69 模型 + Top 12 偏误速查；L2 选 1-3 个，L3 选 2-5 个，最多 5 个
+77 模型 + Top 12 偏误速查；L2 选 1-3 个，L3 选 2-5 个，最多 5 个
 完整 39 偏差见 bias-correction skill 的 BIASES.md
 
 ## 安全
@@ -23,4 +23,4 @@
 **结论** / **关键分析** / **行动(3 items, 含验证与时间)** / **风险/反方** / **置信度**
 
 ## 扩展
-FULL-MODELS.md | BIAS-CORRECTION.md | REFERENCE.md（一次只读一个）
+models/（#11-77 按领域分文件） | BIAS-CORRECTION.md | REFERENCE.md（一次只读一个）
